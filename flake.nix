@@ -26,6 +26,9 @@
             clippy
             rustfmt
           ];
+          shellHook = ''
+            export PS1="\[\e[1;34m\][nix]\[\e[0m\] $PS1"
+          '';
         };
       }
     );
